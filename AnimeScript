@@ -5,7 +5,7 @@ local w = library:CreateWindow("Anime Games Scripthub ") -- Creates the window
 local Scripts = w:CreateFolder("Scripts")
 local Games = w:CreateFolder("Games Supported") 
 local Credits = w:CreateFolder("Credits") 
-local Info = w:CreateFolder("Credits") 
+local Info = w:CreateFolder("Info") 
 
 Scripts:Button("Final Conquest",function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Blackout4781/Karma-Hub/main/Demon%20Slayer%20Final%20Conquest'))()
