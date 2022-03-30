@@ -1,0 +1,75 @@
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
+
+local w = library:CreateWindow("Anime Games Scripthub ") -- Creates the window
+
+local Scripts = w:CreateFolder("Scripts")
+local Games = w:CreateFolder("Games Supported") 
+local Credits = w:CreateFolder("Credits") 
+local Info = w:CreateFolder("Credits") 
+
+Scripts:Button("Final Conquest",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Blackout4781/Karma-Hub/main/Demon%20Slayer%20Final%20Conquest'))()
+end)
+
+Scripts:Button("Demonfall",function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/kP7f6mFC'))()
+end)
+
+Scripts:Button("Blox Fruits",function()
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/BaconLords/Random-Shit/main/OMG.lua")()
+end)
+
+Scripts:Button("Slayers Unleashed",function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/SlayersChanger'),true))()
+end)
+
+Games:Label("Demonfall",{
+    TextSize = 16; -- Self Explaining
+    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+    BgColor = Color3.fromRGB(38,38,38); -- Self Explaining
+    
+}) 
+
+Games:Label("Final Conquest",{
+    TextSize = 16; -- Self Explaining
+    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+    BgColor = Color3.fromRGB(38,38,38); -- Self Explaining
+    
+}) 
+
+Games:Label("Blox Fruits",{
+    TextSize = 16; -- Self Explaining
+    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+    BgColor = Color3.fromRGB(38,38,38); -- Self Explaining
+    
+}) 
+
+Games:Label("Slayers Unleashed",{
+    TextSize = 16; -- Self Explaining
+    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+    BgColor = Color3.fromRGB(38,38,38); -- Self Explaining
+    
+}) 
+
+Credits:Label("pendersh#0111",{
+    TextSize = 16; -- Self Explaining
+    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+    BgColor = Color3.fromRGB(38,38,38); -- Self Explaining
+    
+}) 
+
+Info:Label("The slayers unleashed script is a stat changer",{
+    TextSize = 16; -- Self Explaining
+    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+    BgColor = Color3.fromRGB(38,38,38); -- Self Explaining
+    
+}) 
+
+Info:Label("The Final conquest script was made by blackout",{
+    TextSize = 16; -- Self Explaining
+    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+    BgColor = Color3.fromRGB(38,38,38); -- Self Explaining
+    
+}) 
+
+Info:DestroyGui()
