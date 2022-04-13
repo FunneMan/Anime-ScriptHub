@@ -26,7 +26,7 @@ return NearestPlayer
 end
 
 function KeyHandler(Input,GameProcessed,Started)
-if Input.KeyCode == Enum.KeyCode.Z and not GameProcessed then
+if Input.UserInputType == Enum.UserInputType.MouseButton2 and not GameProcessed then
 if Started then
 Attacking = AutoLock(game.Players.LocalPlayer.Character.PrimaryPart.Position)
 else
