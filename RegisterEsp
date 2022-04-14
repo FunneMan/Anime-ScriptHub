@@ -1,0 +1,34 @@
+local ESPtypes = {
+   ["Register"] = Color3.fromRGB(3,252,61),
+   ["SmallSafe"] = Color3.fromRGB(0,42,255),
+   ["MediumSafe"] = Color3.fromRGB(50,50,255),
+}
+local surfaces = {"Left","Right","Front","Back","Top","Bottom"}
+
+local function newSafeESP(target)
+   repeat wait()until target.PrimaryPart
+   local tonky
+   for cyka,blyat in next, ESPtypes do
+       if string.find(tostring(target),cyka)then
+           tonky = blyat
+       end
+   end
+   for jasonjjk=1,#surfaces do
+       local jjk = Instance.new("SurfaceGui",target.PrimaryPart)
+       jjk.AlwaysOnTop = true
+       jjk.LightInfluence = 0
+       jjk.Face = surfaces[jasonjjk]
+       local n4yiscute = Instance.new("Frame",jjk)
+       n4yiscute.Size = UDim2.new(1,0,1,0)
+       n4yiscute.BorderSizePixel = 0
+       n4yiscute.BackgroundColor3 = tonky
+   end
+end
+
+for _,jasonjjk in next,game.Workspace.Map.CashRegisters:GetChildren()do
+   newSafeESP(jasonjjk)
+end
+
+game.Workspace.Map.CashRegisters.ChildAdded:Connect(function(jasonjjk)
+   newSafeESP(jasonjjk)
+end)
